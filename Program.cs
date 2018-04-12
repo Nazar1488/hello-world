@@ -15,7 +15,7 @@ namespace Завдання_3__Car_
         private double cost;
         public Car()
         {
-            brand = "Epmty";
+            brand = "Nobrand";
             year = 0;
             cost = 0d;
         }
