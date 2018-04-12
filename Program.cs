@@ -59,6 +59,7 @@ namespace Лабораторна_1
             rules.Add(new Rule("zy", "yz"));
             rules.Add(new Rule("yw", "wy"));
             rules.Add(new Rule("zw", "wz"));
+            rules.Add(new Rule("zw", "wz"));
             string input;
             Console.WriteLine("<---=== TASK 1 ===--->\nInput string (A=(x,y,z,w)):");
             input = Console.ReadLine();
