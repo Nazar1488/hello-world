@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Лабораторна_1
+namespace lab_1
 {
     struct Rule
     {
