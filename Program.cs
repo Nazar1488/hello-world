@@ -364,6 +364,36 @@ namespace Завдання_3__Car_
 
         public static List<Car> SearchByBrand(List<Car> lst, string _brand)
         {
+        patch-2
+            List<Rule> rules = new List<Rule>();
+            rules.Add(new Rule("yx", "xy"));
+            rules.Add(new Rule("zx", "xz"));
+            rules.Add(new Rule("xw", "wx"));
+            rules.Add(new Rule("zy", "yz"));
+            rules.Add(new Rule("yw", "wy"));
+            rules.Add(new Rule("zw", "wz"));
+            rules.Add(new Rule("zw", "wz"));
+            string input;
+            Console.WriteLine("<---=== TASK 1 ===--->\nInput string (A=(x,y,z,w)):");
+            input = Console.ReadLine();
+            Console.WriteLine("Result: " + MarkovAlgorithm(rules, input));
+            Console.ReadKey();
+            string input2;
+            Console.WriteLine("<---=== TASK 2 ===--->\nInput string (A=(o,s,q,r)):");
+            input2 = Console.ReadLine();
+            List<Rule> rules2 = new List<Rule>();
+            rules2.Add(new Rule("o", ""));
+            rules2.Add(new Rule("s", ""));
+            input2 = MarkovAlgorithm(rules2, input2);
+            Console.WriteLine(input2);
+            if (input2.Contains("qq"))
+            {
+                string sub_str = "qq";
+                int i = input2.IndexOf(sub_str);
+                input2 = input2.Remove(i, sub_str.Length).Insert(i, "rr");
+            }
+            Console.WriteLine(input2);
+            Console.ReadKey();
             return lst.FindAll(x => x.Brand.Contains(_brand));
         }
 
